@@ -1,0 +1,30 @@
+{
+  "name": "Sidebox",
+  "version": "0.1.0",
+  "summary": "Library for ViewController with Temporary storage function.",
+  "description": "Sidebox\n\nThis library enable user to\n* temporary storage\n* quick comparison",
+  "homepage": "https://github.com/Nonchalant/Sidebox",
+  "screenshots": [
+    "https://github.com/Nonchalant/Sidebox/wiki/images/screenshot1.png",
+    "https://github.com/Nonchalant/Sidebox/wiki/images/screenshot2.png"
+  ],
+  "license": "MIT",
+  "authors": {
+    "Nonchalant": "afrontier829@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Nonchalant/Sidebox.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/l_index",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "Sidebox": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

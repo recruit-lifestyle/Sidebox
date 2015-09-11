@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'Sidebox_Example', :exclusive => true do
+  pod "Sidebox", :path => "../"
+end
+
+target 'Sidebox_Tests', :exclusive => true do
+  pod "Sidebox", :path => "../"
+
+  
+end
