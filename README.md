@@ -26,7 +26,8 @@ Sidebox is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-use_framworks!
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
 pod "Sidebox"
 ```
 
