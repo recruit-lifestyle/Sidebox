@@ -15,7 +15,20 @@ public class SBTableView: UITableView, UITableViewDelegate {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        initializer()
+    }
+    
+    override init(frame: CGRect, style: UITableViewStyle) {
+        super.init(frame: frame, style: style)
+        initializer()
+    }
+    
+    required public init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        initializer()
+    }
+    
+    public func initializer() {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "removeIcon:", name: "sbRemove", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "edit:", name: "sbEdit", object: nil)
         
@@ -29,14 +42,6 @@ public class SBTableView: UITableView, UITableViewDelegate {
         let leftLine = UIView(frame: CGRectMake(0.0, -self.frame.size.height/2.0, 1.0, self.frame.size.height*2))
         leftLine.backgroundColor = .grayColor()
         self.addSubview(leftLine)
-    }
-    
-    override init(frame: CGRect, style: UITableViewStyle) {
-        super.init(frame: frame, style: style)
-    }
-    
-    required public init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     final func focus(hover: Bool) {

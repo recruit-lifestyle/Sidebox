@@ -8,7 +8,7 @@
 
 import Foundation
 
-internal class SBDataModel: NSObject {
+class SBDataModel: NSObject {
     
     static let sharedInstance = SBDataModel()
     private(set) var array = [SBDataObject]()

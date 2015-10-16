@@ -21,7 +21,15 @@ public class SBRootView: UIView, UIGestureRecognizerDelegate {
     
     override public init(frame: CGRect) {
         super.init(frame: frame)
-        
+        initializer()
+    }
+    
+    required public init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        initializer()
+    }
+    
+    private func initializer() {
         coverView.frame = self.bounds
         coverView.backgroundColor = .blackColor()
         coverView.alpha = 0.15
@@ -38,10 +46,6 @@ public class SBRootView: UIView, UIGestureRecognizerDelegate {
         self.userInteractionEnabled = true
         self.addGestureRecognizer(longGesture)
         self.addGestureRecognizer(panGesture)
-    }
-    
-    required public init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 
     public override func didMoveToSuperview() {

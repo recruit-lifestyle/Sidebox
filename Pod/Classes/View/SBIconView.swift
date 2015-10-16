@@ -8,7 +8,7 @@
 
 import UIKit
 
-internal class SBIconView: SBRootView {
+class SBIconView: SBRootView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)

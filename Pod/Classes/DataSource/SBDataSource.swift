@@ -8,7 +8,7 @@
 
 import UIKit
 
-internal class SBDataSource: NSObject, UITableViewDataSource {
+class SBDataSource: NSObject, UITableViewDataSource {
     
     final func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return SBDataModel.sharedInstance.array.count

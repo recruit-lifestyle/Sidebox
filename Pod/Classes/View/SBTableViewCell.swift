@@ -8,7 +8,7 @@
 
 import UIKit
 
-internal class SBTableViewCell: UITableViewCell {
+class SBTableViewCell: UITableViewCell {
         
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

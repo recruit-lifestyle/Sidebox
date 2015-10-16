@@ -17,7 +17,20 @@ public class SBViewController: UIViewController, SBViewDelegate {
     private var hold = false
     
     convenience public init() {
-        self.init(nibName: nil, bundle: nil)        
+        self.init(nibName: nil, bundle: nil)
+    }
+    
+    override public init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
+        super.init(nibName: nil, bundle: nil)
+        initializer()
+    }
+    
+    required public init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        initializer()
+    }
+    
+    private func initializer() {
         self.view.addSubview(sidebox)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "hovered:", name: "sbHover", object: nil)
@@ -31,14 +44,6 @@ public class SBViewController: UIViewController, SBViewDelegate {
         
         self.view.addGestureRecognizer(swipeRightGesture)
         self.view.addGestureRecognizer(swipeLeftGesture)
-    }
-    
-    override public init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required public init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     // MARK: - NSNotification
