@@ -1,0 +1,6 @@
+framework module Sidebox {
+  umbrella header "Sidebox-umbrella.h"
+
+  export *
+  module * { export * }
+}

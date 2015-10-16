@@ -1,0 +1,14 @@
+PODS:
+  - Sidebox (0.1.0)
+
+DEPENDENCIES:
+  - Sidebox (from `../`)
+
+EXTERNAL SOURCES:
+  Sidebox:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Sidebox: 362bc492829b33916cc7b4300afc9c8519d3fe9b
+
+COCOAPODS: 0.38.2
