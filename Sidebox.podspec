@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Sidebox"
-  s.version          = "1.0.1"
+  s.version          = "1.0.2"
   s.summary          = "Library for ViewController with Temporary storage function."
   s.description      = <<-DESC
                        Sidebox
