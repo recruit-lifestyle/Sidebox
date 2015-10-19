@@ -72,10 +72,11 @@ override func iconTapped(data: SBDataObject) {
 }
 ```
 
-## Author
+## Credit
 
-Takeshi Ihara, t_ihara@waku-2.com  
-Keisuke Toyoshima, k_toyoshima@waku-2.com
+Sidebox is owned and maintained by RECRUIT LIFESTYLE CO., LTD.
+
+Sidebox was originally created by Takeshi Ihara.
 
 ##License
 
